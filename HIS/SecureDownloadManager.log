@@ -1,0 +1,15 @@
+[Download] [Trace] OnEventMessage FileKey 0 2014/10/9 19:35:49:576 Event_ActionButton
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:35:49:579 Download Start Phase - InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount)) retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:35:49:579 InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_SERVER, 100, sizeof(dwMaxCount))retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:35:49:579 InternetOpen(AfxGetAppName(), INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, INTERNET_FLAG_DONT_CACHE | INTERNET_FLAG_RELOAD)retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:35:49:579 InternetSetOption(hInternetSession, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount));retCode = 0
+[Download] [Trace] OnEventMessage FileKey 0 2014/10/9 19:35:50:471 Event_ActionButton
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:35:50:578 InternetConnect(hInternetSession, 'software.dreamspark.com', 80, NULL, NULL, INTERNET_SERVICE_HTTP, 0, (DWORD) this);
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:35:50:578 HttpOpenRequest(hHttpConnection, NULL, /dreamspark/ENGLISH/en_visio_professional_2013_x86_x64_dvd_1134691.sdc, 'HTTP/1.1', NULL, NULL, 2218787072, 0)
+[Download] [Trace] OnEventMessage FileKey 0 2014/10/9 19:38:20:904 Event_ActionButton
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:38:20:912 Download Start Phase - InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount)) retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:38:20:912 InternetSetOption(NULL, INTERNET_OPTION_MAX_CONNS_PER_SERVER, 100, sizeof(dwMaxCount))retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:38:20:913 InternetOpen(AfxGetAppName(), INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, INTERNET_FLAG_DONT_CACHE | INTERNET_FLAG_RELOAD)retCode = 1
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:38:20:913 InternetSetOption(hInternetSession, INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVER, 100, sizeof(dwMaxCount));retCode = 0
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:38:21:911 InternetConnect(hInternetSession, 'software.dreamspark.com', 80, NULL, NULL, INTERNET_SERVICE_HTTP, 0, (DWORD) this);
+[Download] [Trace] OnDebugMessage FileKey 1 2014/10/9 19:38:21:911 HttpOpenRequest(hHttpConnection, NULL, /dreamspark/ENGLISH/en_visio_professional_2013_x86_x64_dvd_1134691.sdc, 'HTTP/1.1', NULL, NULL, 2218787072, 0)

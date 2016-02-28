@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Financialcenter.master.cs" Inherits="Financialcenter" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HIS---Financialcenter</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="../images/bg.jpg">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div>
+        <div style="background-image: url('/HIS/images/xk2.gif'); background-repeat: no-repeat;
+            background-position: center; height: 148px; ">
+        </div>
+        <div style="border-style: none none dotted none; height: 20px;">
+            <div style="width: 50%; float: left; ">
+                &nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Text="ID：" ForeColor="White" 
+                    Font-Names="Meiryo UI"></asp:Label>
+                &nbsp;<asp:Label ID="bianhao" runat="server" Text="Label" ForeColor="White" 
+                    Font-Names="Meiryo UI"></asp:Label>
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label3" runat="server" Text="Name：" ForeColor="White" 
+                    Font-Names="Meiryo UI"></asp:Label>
+                &nbsp;<asp:Label ID="xingming" runat="server" ForeColor="White" 
+                    Font-Names="Meiryo UI"></asp:Label>
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label2" runat="server" Text="Identity：" ForeColor="White" 
+                    Font-Names="Meiryo UI"></asp:Label>
+                &nbsp;<asp:Label ID="shenfen" runat="server" ForeColor="White" 
+                    Font-Names="Meiryo UI"></asp:Label></div>
+            <div style="float: right;">
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:Label ID="Label" runat="server" Text="Time：  " ForeColor="White" 
+                            Font-Names="Meiryo UI"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" ForeColor="White" 
+                            Font-Names="Meiryo UI"></asp:Label>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Timer ID="Timer1" runat="server" Interval="1000" ontick="Timer1_Tick">
+                        </asp:Timer>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </div>
+    <div style="border-style: none none dotted none; border-width: medium">
+        <center>
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                style="margin-bottom: 0px" ForeColor="White" Font-Names="Meiryo UI">
+                <Items>
+                    <asp:MenuItem Text="Personal Management" Value="Personal Management" NavigateUrl="~/Financialcenter/Memberinfo.aspx" Target="main">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Bill Management" Value="Bill Management" NavigateUrl="~/Financialcenter/Billmanagement.aspx" Target="main">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Sign Out" Value="Sign Out" NavigateUrl="~/login.aspx"></asp:MenuItem>
+                </Items>
+                <StaticMenuItemStyle HorizontalPadding="15px" />
+            </asp:Menu>
+        </center>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
